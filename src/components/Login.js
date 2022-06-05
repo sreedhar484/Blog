@@ -39,7 +39,7 @@ export class Login extends Component {
   btnClick = (event) => {
     event.preventDefault();
     if (this.state.templog==true){
-      Axios.post("https://blogdis.herokuapp.com/login",{id: this.state.id,answer:this.state.answer})
+      Axios.post("https://urblog.herokuapp.com/login",{id: this.state.id,answer:this.state.answer})
       .then((res)=>{
         console.log(res.data)
         if (res.data=="Invalid Answer"){
@@ -59,7 +59,7 @@ export class Login extends Component {
     }
     if (this.state.userName.length !== 0) {
       if (this.state.password.length !== 0) {
-        Axios.post("https://blogdis.herokuapp.com/login",{username:this.state.userName,password:this.state.password})
+        Axios.post("https://urblog.herokuapp.com/login",{username:this.state.userName,password:this.state.password})
         .then((res)=>{
           console.log(res.data)
             if (res.data=="Invalid Credentials"){

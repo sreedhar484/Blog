@@ -1,6 +1,6 @@
 import React, { useState,useContext, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
-import { postContext } from "./Dashboard";
+
 import {Box,Text,Flex} from "@chakra-ui/core";
 import { Link } from 'react-router-dom'
 import Cookie from "js-cookie";

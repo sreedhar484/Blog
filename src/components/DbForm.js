@@ -35,7 +35,7 @@ function DbForm(props) {
       changeNameErr("");
       if(content.length!=0){    
         let data = JSON.parse(Cookie.get("userData"))
-        Axios.post("https://blogdis.herokuapp.com/write",{username:data.userName, title:name, info:content})
+        Axios.post("https://urlblogd.herokuapp.com/write",{username:data.userName, title:name, info:content})
         .then((res)=>{
           console.log(res.data,'post added')
           toast.success("post added successfully", { position: toast.POSITION.TOP_CENTER });

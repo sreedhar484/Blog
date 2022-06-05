@@ -15,7 +15,6 @@ import Header from "./Header";
 import DbForm from "./DbForm";
 import Register from "./Register";
 import Login from "./Login";
-import Dashboard from "./Dashboard";
 import Submit from "./Submit";
 import PostDetails from "./PostDetails";
 import Search from "./search";
